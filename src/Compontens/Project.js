@@ -15,14 +15,10 @@ const Project = () => {
       {/* First section: Image on the right, Content on the left */}
       <ContentImageWrapper>
         <Content>
-          <p>Web Application</p>
+          <p className='title'>Web Application</p>
           <Description>
-            <span>
-              This Pizza App, built with the MERN Stack, features CRUD operations, seamless payment integration, robust email verification, password recovery functionality, and secure JWT token authentication. It offers a comprehensive solution for managing pizza orders and ensuring a smooth user experience from order placement to delivery.
-            </span>
+          <span>  This Pizza App, built with the MERN Stack, features CRUD operations, seamless payment integration, robust email verification, password recovery functionality, and secure JWT token authentication. It offers a comprehensive solution for managing pizza orders and ensuring a smooth user experience from order placement to delivery.</span>
           </Description>
-          <br />
-          <br />
           <a href="https://oibsip-pizza-app.onrender.com/">Live site</a>
         </Content>
         <Image src={pizza} alt="Pizza Delivery" />
@@ -34,11 +30,8 @@ const Project = () => {
         <ContentRight>
           <p>Web Application</p>
           <Descriptionleft>
-            <span className='left'>
-              This Chat App, built with the MERN Stack, Real-time chat-App with socket.io for fast connection client to server direct so messages will be fast.
-            </span>
+         <span>   This Chat App, built with the MERN Stack, is a real-time chat app with socket.io for fast, direct communication between client and server, ensuring quick message delivery.</span>
           </Descriptionleft>
-          <br />
           <a href="https://chat-app-frontends-yla0.onrender.com/">Live site</a>
         </ContentRight>
       </ImageLeftContentRightWrapper>
@@ -46,14 +39,10 @@ const Project = () => {
       {/* Third section: Image on the right, Content on the left */}
       <ContentImageWrapper>
         <Content>
-          <p>Web3 Application</p>
+          <p className='title'>Web3 Application</p>
           <Description>
-            <span className='left'>
-              This is Hand🤝Fund, a crowdfunding project leveraging blockchain technology. It uses MetaMask for transactions, along with Web3.js, Remix Solidity, and React for the frontend. Hand🤝Fund allows users to create campaigns and donate directly to campaign owners, ensuring transparent fund transactions.
-            </span>
+          <span>  Hand🤝Fund is a crowdfunding project leveraging blockchain technology. It uses MetaMask for transactions, along with Web3.js, Remix Solidity, and React for the frontend. Hand🤝Fund allows users to create campaigns and donate directly to campaign owners, ensuring transparent fund transactions.</span>
           </Description>
-          <br />
-          <br />
           <a href="https://hand-fund.onrender.com/#">Live site</a>
         </Content>
         <Image src={hand} alt="Hand Fund" />
@@ -68,11 +57,6 @@ const Container = styled.div`
   align-items: center;
   padding: 20px;
   border-radius: 8px;
-
-.left{
-  text-align: justify;
-}
-
 `;
 
 const CenteredHeader = styled.div`
@@ -109,8 +93,9 @@ const ContentImageWrapper = styled.div`
 const Content = styled.div`
   max-width: 600px;
   margin-right: 20px; /* Space between content and image */
+  text-align: left;
 
-  p {
+  .title {
     font-size: 2rem;
     color: #FF014F;
   }
@@ -122,12 +107,11 @@ const Content = styled.div`
   }
 `;
 
-const Description = styled.span`
+const Description = styled.p`
   color: #fff;
   font-size: 1.5rem;
   text-align: justify;
   margin: 20px 0;
- 
 `;
 
 const Image = styled.img`
@@ -152,7 +136,7 @@ const ImageLeftContentRightWrapper = styled.div`
 
   @media (max-width: 768px) {
     flex-direction: column; /* Stack vertically on small screens */
-    text-align: justify;
+    text-align: center;
   }
 `;
 
@@ -171,10 +155,11 @@ const ImageLeft = styled.img`
 
 const ContentRight = styled.div`
   max-width: 600px;
+  text-align: left;
 
   p {
     font-size: 2rem;
-    color: #FF014F;
+    color: #ffff;
   }
 
   a {
@@ -184,12 +169,11 @@ const ContentRight = styled.div`
   }
 `;
 
-const Descriptionleft = styled.span`
+const Descriptionleft = styled.p`
   color: #fff;
   font-size: 1.5rem;
   text-align: justify;
   margin: 20px 0;
- 
 `;
 
 export default Project;
