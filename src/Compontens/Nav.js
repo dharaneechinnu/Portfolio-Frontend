@@ -112,32 +112,16 @@ const Container = styled.div`
   }
 
   @media screen and (max-width: 820px) {
-    .nav-menu li a {
-      font-size: 5rem;
-    }
+  
+   .nav-menu{
+    display: none;
+   }
   }
 
   @media screen and (max-width: 1040px) {
-    .nav-menu {
-      flex-direction: row;
-      justify-content: top;
-      align-items: top;
-      width: 100%;
-      gap: 1rem;
-      position: absolute;
-      top: 0;
-      left: 10%;
-      z-index: -3;
-      transition: 0.3s;
-    }
-
-    .nav-menu li {
-      padding: 1rem 0;
-    }
-
-    .nav-menu li a {
-      font-size: 1rem;
-    }
+    .nav-menu{
+    display: none;
+   }
   }
 `;
 
