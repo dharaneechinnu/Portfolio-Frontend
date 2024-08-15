@@ -188,7 +188,7 @@ const TextSection = styled.div`
   h1 {
     margin-bottom: 1rem;
     font-size: 2.5rem;
-    color: #FF014F;
+    color: red;
   }
   p {
     font-size: 1.25rem;
@@ -196,7 +196,7 @@ const TextSection = styled.div`
     width: 100%;
     text-align: center;
     span {
-      color: #FF014F;
+      color: red;
       font-weight: 800;
     }
   }
@@ -282,7 +282,7 @@ const Textarea = styled.textarea`
 `;
 
 const SubmitButton = styled.button`
-  background-color: #FF014F;
+  background-color: red;
   color: white;
   padding: 0.75rem 1.5rem;
   border: none;

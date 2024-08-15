@@ -68,7 +68,7 @@ const TextSection = styled.div`
 `;
 
 const Heading = styled.h2`
-  color: #FF014F; /* Accent color */
+  color: red; /* Accent color */
   font-size: 5rem;
   margin: 0;
 
@@ -83,7 +83,7 @@ const SubHeading = styled.h3`
   margin-bottom: 20px;
   width: 400px;
    span {
-    color: #FF014F; /* Color for the first word */
+    color: red; /* Color for the first word */
   }
 
   

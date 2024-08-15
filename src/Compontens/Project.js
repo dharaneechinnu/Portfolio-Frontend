@@ -76,8 +76,8 @@ import hand from '../img/hand.png';
 
         <div className="content">
           <div className="left-content">
-            <p>Web Application</p>
-            <div className="project-title">Pizza Delivery Application</div>
+            <p>Web3 Application</p>
+            <div className="project-title">Hand Fund</div>
             <span>
               Pizza Delivery application is built using the MERN stack (React,
               Node, Express, MongoDB) with user authentication, JWT for verification, and features for forgot and reset passwords.
@@ -136,7 +136,7 @@ const StyledProject = styled.div`
         font-weight: 500;
 
         .highlight {
-          color: #FF014F;
+          color: red;
           font-weight: 700;
         }
       }

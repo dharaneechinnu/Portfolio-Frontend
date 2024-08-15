@@ -64,7 +64,7 @@ const Greeting = styled.h4`
 `;
 
 const Name = styled.h1`
-  color: #FF014F;
+  color: red;
   font-size: 5rem;
   margin: 0;
   @media (max-width: 768px) {
@@ -105,8 +105,8 @@ const ContactButton = styled.a`
   padding: 10px 20px;
   margin-right: 10px;
   color: #fff;
-  border: 1px solid #FF014F;
-  background-color: #FF014F;
+  border: 1px solid red;
+  background-color: red;
   border-radius: 5px;
   text-decoration: none;
   font-size: 1rem;
@@ -121,7 +121,7 @@ const ResumeButton = styled.a`
   display: inline-block;
   padding: 10px 20px;
   color: #fff;
-  border: 1px solid #FF014F;
+  border: 1px solid red;
   background-color: transparent;
   border-radius: 5px;
   text-decoration: none;
@@ -136,7 +136,7 @@ const ResumeButton = styled.a`
 const Image = styled.img`
   width: 400px;
   height: 400px;
-  border: 5px solid #FF014F;
+  border: 5px solid red;
   border-radius: 50%;
   object-fit: cover;
 

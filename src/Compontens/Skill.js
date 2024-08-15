@@ -52,7 +52,7 @@ const Skill = () => {
 const Name = styled.div`
   font-size: 5rem;
   font-weight: 600;
-  color: #FF014F;
+  color: red;
 `;
 
 const Container = styled.div`
