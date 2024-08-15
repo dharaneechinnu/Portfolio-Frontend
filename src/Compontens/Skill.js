@@ -57,11 +57,11 @@ const Name = styled.div`
 `;
 
 const Container = styled.div`
-  height: 100vh;
-  @media (max-width: 768px) {
+   width: 100%;
+   @media (max-width: 768px) {
     flex-direction: column;
     align-items: center;
-    margin-left: 5rem;
+    padding: 0 1rem; /* Added padding for better spacing on small screens */
   }
   .skill_full {
     width: 100%;
@@ -130,8 +130,8 @@ const Container = styled.div`
   /* Media Query for smaller screens */
   @media screen and (max-width: 768px) {
     .stack li {
-      width: 80px; /* Adjusted width for smaller screens */
-      height: 80px; /* Adjusted height for smaller screens */
+      width: 100px; /* Adjusted width for smaller screens */
+      height: 100px; /* Adjusted height for smaller screens */
       margin: 0 5px; /* Further reduced margin for even smaller screens */
       margin-bottom: 10px;
     }

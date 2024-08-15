@@ -29,10 +29,10 @@ const Container = styled.div`
   justify-content: center;
   align-items: center;
   min-height: 100vh;
-  width: 100%;
+ 
 `;
 
-const Content = styled.div` margin-left: 2rem;
+const Content = styled.div`
   display: flex;
   align-items: center;
   width: 100%;
@@ -41,7 +41,7 @@ const Content = styled.div` margin-left: 2rem;
 
   @media (max-width: 1200px) {
     flex-direction: column;
-   
+    margin-left: 2rem;
     text-align: center;
     justify-content: center;
   }

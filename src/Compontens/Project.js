@@ -79,11 +79,10 @@ import hand from '../img/hand.png';
             <p>Web3 Application</p>
             <div className="project-title">Hand Fund</div>
             <span>
-              Pizza Delivery application is built using the MERN stack (React,
-              Node, Express, MongoDB) with user authentication, JWT for verification, and features for forgot and reset passwords.
+              Hand Fund is crowdfunding Decentralizated application developed using Solidity and react and web3js for interactive with smart contract truffle and etherscan remix to deploy and test.
             </span>
             <div className="icon">
-            <h6>React|Node|Express|MongoDb</h6>  
+            <h6>React|Solidity|Web3js|remix|truffle</h6>  
             <div className="svg">
             <a href="https://github.com/dharaneechinnu/Hand-Fund">
             <svg width="27" height="29" viewBox="0 0 27 29" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -118,7 +117,11 @@ const StyledProject = styled.div`
   justify-content: center;
   align-items: center;
   padding: 20px;
-
+  @media (max-width: 768px) {
+    flex-direction: column;
+    align-items: center;
+    padding: 0 1rem; /* Added padding for better spacing on small screens */
+  }
   .project {
     display: flex;
     flex-direction: column;

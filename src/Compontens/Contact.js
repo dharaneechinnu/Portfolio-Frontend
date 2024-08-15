@@ -178,6 +178,10 @@ const Container = styled.div`
     background-color: #1E1E1E;
     padding: 5px;
     border-radius: 5px;
+    @media (max-width: 768px) {
+    font-size: 2rem;
+    margin-left: 2rem;
+  }
   }
 `;
 
