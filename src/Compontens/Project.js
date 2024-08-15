@@ -1,179 +1,244 @@
 import React from 'react';
 import styled from 'styled-components';
 import pizza from '../img/pizza.png'; // Adjust the path as needed
-import chat from '../img/chat.png'; // Adjust the path as needed
-import hand from '../img/hand.png'; // Adjust the path as needed
+import chat from '../img/chat.png';
+import hand from '../img/hand.png';
 
-const Project = () => {
+ const Project = () => {
   return (
-    <Container id="project">
-      <CenteredHeader>
-        <Heading>Explore My</Heading>
-        <Title>Project</Title>
-      </CenteredHeader>
+    <StyledProject id="project">
+      <div className="project">
+        <div className="heading">
+          <p>Explore My <span className="highlight">Project</span></p>
+        </div>
 
-      {/* First section: Image on the right, Content on the left */}
-      <ContentImageWrapper>
-        <Content>
-          <p className='title'>Web Application</p>
-          <Description>
-          <span>  This Pizza App, built with the MERN Stack, features CRUD operations, seamless payment integration, robust email verification, password recovery functionality, and secure JWT token authentication. It offers a comprehensive solution for managing pizza orders and ensuring a smooth user experience from order placement to delivery.</span>
-          </Description>
-          <a href="https://oibsip-pizza-app.onrender.com/">Live site</a>
-        </Content>
-        <Image src={pizza} alt="Pizza Delivery" />
-      </ContentImageWrapper>
+        <div className="content">
+          <div className="left-content">
+            <p>Web Application</p>
+            <div className="project-title">Pizza Delivery Application</div>
+            <span>
+              Pizza Delivery application is built using the MERN stack (React,
+              Node, Express, MongoDB) with user authentication, JWT for verification, and features for forgot and reset passwords.
+            </span>
+            <div className="icon">
+            <h6>React|Node|Express|MongoDb</h6>  
+            <div className="svg">
+            <a href="https://github.com/dharaneechinnu/OIBSIP-Frontend">
+            <svg width="27" height="29" viewBox="0 0 27 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M10.281 24.1342C4.11048 26.0226 4.11048 20.9868 1.64227 20.3573M18.9197 27.911V23.0389C18.966 22.4386 18.8865 21.8351 18.6865 21.2686C18.4865 20.702 18.1706 20.1854 17.7597 19.753C21.6348 19.3124 25.7073 17.8143 25.7073 10.9404C25.707 9.18274 25.0442 7.49244 23.8562 6.2194C24.4187 4.68161 24.379 2.98184 23.7451 1.47318C23.7451 1.47318 22.2888 1.03255 18.9197 3.33642C16.0912 2.55439 13.1096 2.55439 10.281 3.33642C6.9119 1.03255 5.45566 1.47318 5.45566 1.47318C4.82179 2.98184 4.78201 4.68161 5.34459 6.2194C4.14766 7.50189 3.4842 9.20746 3.49343 10.9782C3.49343 17.8017 7.56597 19.2998 11.4411 19.7908C11.035 20.2188 10.7219 20.7292 10.522 21.2889C10.3222 21.8485 10.24 22.4447 10.281 23.0389V27.911" stroke="#FF014F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+</a>
+<a href="https://oibsip-pizza-app.onrender.com/">
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#FF014F" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="feather feather-external-link"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+</a>
+</div>
 
-      {/* Second section: Content on the right, Image on the left */}
-      <ImageLeftContentRightWrapper>
-        <ImageLeft src={chat} alt="Chat App" />
-        <ContentRight>
-          <p>Web Application</p>
-          <Descriptionleft>
-         <span>   This Chat App, built with the MERN Stack, is a real-time chat app with socket.io for fast, direct communication between client and server, ensuring quick message delivery.</span>
-          </Descriptionleft>
-          <a href="https://chat-app-frontends-yla0.onrender.com/">Live site</a>
-        </ContentRight>
-      </ImageLeftContentRightWrapper>
+            </div>
+            
 
-      {/* Third section: Image on the right, Content on the left */}
-      <ContentImageWrapper>
-        <Content>
-          <p className='title'>Web3 Application</p>
-          <Description>
-          <span>  Hand🤝Fund is a crowdfunding project leveraging blockchain technology. It uses MetaMask for transactions, along with Web3.js, Remix Solidity, and React for the frontend. Hand🤝Fund allows users to create campaigns and donate directly to campaign owners, ensuring transparent fund transactions.</span>
-          </Description>
-          <a href="https://hand-fund.onrender.com/#">Live site</a>
-        </Content>
-        <Image src={hand} alt="Hand Fund" />
-      </ContentImageWrapper>
-    </Container>
+          
+           
+          </div>
+          <div className="right-content">
+            <img src={pizza} alt="pizza" />
+          </div>
+        </div>
+
+        <div className="content">
+          
+          <div className="right-content">
+            <img src={chat} alt="pizza" />
+          </div>
+          <div className="left-content">
+            <p>Web Application</p>
+            <div className="project-title">Chat Apllication </div>
+            <span>
+              Real time chat application using MERN stack ( React , node, Express, mongodb) with socket.io for direct connection from client to server and user authentication and notification with sound 
+            </span>
+            <div className="icon">
+            <h6>React|Node|Express|MongoDb</h6>  
+            <div className="svg">
+            <a href="https://github.com/dharaneechinnu/Chat-App-Frontend">
+            <svg width="27" height="29" viewBox="0 0 27 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M10.281 24.1342C4.11048 26.0226 4.11048 20.9868 1.64227 20.3573M18.9197 27.911V23.0389C18.966 22.4386 18.8865 21.8351 18.6865 21.2686C18.4865 20.702 18.1706 20.1854 17.7597 19.753C21.6348 19.3124 25.7073 17.8143 25.7073 10.9404C25.707 9.18274 25.0442 7.49244 23.8562 6.2194C24.4187 4.68161 24.379 2.98184 23.7451 1.47318C23.7451 1.47318 22.2888 1.03255 18.9197 3.33642C16.0912 2.55439 13.1096 2.55439 10.281 3.33642C6.9119 1.03255 5.45566 1.47318 5.45566 1.47318C4.82179 2.98184 4.78201 4.68161 5.34459 6.2194C4.14766 7.50189 3.4842 9.20746 3.49343 10.9782C3.49343 17.8017 7.56597 19.2998 11.4411 19.7908C11.035 20.2188 10.7219 20.7292 10.522 21.2889C10.3222 21.8485 10.24 22.4447 10.281 23.0389V27.911" stroke="#FF014F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+</a>
+<a href="https://chat-app-frontends-yla0.onrender.com/">
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#FF014F" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="feather feather-external-link"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+</a>
+</div>
+
+            </div>
+           
+          </div>
+        </div>
+
+
+        <div className="content">
+          <div className="left-content">
+            <p>Web Application</p>
+            <div className="project-title">Pizza Delivery Application</div>
+            <span>
+              Pizza Delivery application is built using the MERN stack (React,
+              Node, Express, MongoDB) with user authentication, JWT for verification, and features for forgot and reset passwords.
+            </span>
+            <div className="icon">
+            <h6>React|Node|Express|MongoDb</h6>  
+            <div className="svg">
+            <a href="https://github.com/dharaneechinnu/Hand-Fund">
+            <svg width="27" height="29" viewBox="0 0 27 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M10.281 24.1342C4.11048 26.0226 4.11048 20.9868 1.64227 20.3573M18.9197 27.911V23.0389C18.966 22.4386 18.8865 21.8351 18.6865 21.2686C18.4865 20.702 18.1706 20.1854 17.7597 19.753C21.6348 19.3124 25.7073 17.8143 25.7073 10.9404C25.707 9.18274 25.0442 7.49244 23.8562 6.2194C24.4187 4.68161 24.379 2.98184 23.7451 1.47318C23.7451 1.47318 22.2888 1.03255 18.9197 3.33642C16.0912 2.55439 13.1096 2.55439 10.281 3.33642C6.9119 1.03255 5.45566 1.47318 5.45566 1.47318C4.82179 2.98184 4.78201 4.68161 5.34459 6.2194C4.14766 7.50189 3.4842 9.20746 3.49343 10.9782C3.49343 17.8017 7.56597 19.2998 11.4411 19.7908C11.035 20.2188 10.7219 20.7292 10.522 21.2889C10.3222 21.8485 10.24 22.4447 10.281 23.0389V27.911" stroke="#FF014F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+</a>
+<a href="https://hand-fund.onrender.com/">
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#FF014F" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="feather feather-external-link"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+</a>
+</div>
+
+            </div>
+            
+
+          
+           
+          </div>
+          <div className="right-content">
+            <img src={hand} alt="pizza" />
+          </div>
+        </div>
+      </div>
+    </StyledProject>
   );
 };
 
-const Container = styled.div`
+
+const StyledProject = styled.div`
+  width: 100vw;
+
   display: flex;
-  flex-direction: column;
+  justify-content: center;
   align-items: center;
   padding: 20px;
-  border-radius: 8px;
-`;
 
-const CenteredHeader = styled.div`
-  text-align: center;
-  margin-bottom: 20px;
-`;
-
-const Heading = styled.h2`
-  color: #fff;
-  font-size: 2rem;
-  margin: 0;
-`;
-
-const Title = styled.h1`
-  color: #FF014F;
-  font-size: 3rem;
-  margin: 0;
-`;
-
-const ContentImageWrapper = styled.div`
-  display: flex;
-  flex-direction: row; /* Default: Image on the right, Content on the left */
-  align-items: center;
-  width: 100%;
-  justify-content: space-between;
-  margin-bottom: 50px;
-
-  @media (max-width: 768px) {
-    flex-direction: column; /* Stack vertically on small screens */
+  .project {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     text-align: center;
+
+    .heading {
+      display: flex;
+      flex-direction: row;
+      gap: 10px;
+
+      p {
+        font-size: 3rem;
+        color: white;
+        font-weight: 500;
+
+        .highlight {
+          color: #FF014F;
+          font-weight: 700;
+        }
+      }
+    }
+
+    .content {
+      display: flex;
+      flex-direction: row;
+      align-items: flex-start;
+      justify-content: space-between;
+      width: 100%;
+      max-width: 1200px;
+      gap: 20px;
+      padding-top: 4rem;
+      padding-bottom: 4rem;
+
+      .left-content {
+        flex: 1;
+        max-width: 500px;
+        text-align: left;
+
+        p {
+          font-size: 1.5rem;
+          font-weight: 600;
+          color: #FF014F;
+        }
+
+        .project-title {
+          font-size: 1.5rem;
+          font-weight: 700;
+          margin: 10px 0;
+          color: #fff;
+        }
+
+        span {
+          font-size: 1rem;
+          line-height: 1.5;
+          color: #fff;
+        }
+
+        .icon {
+          display: flex;
+          gap: 2rem;
+
+          a {
+            display: flex;
+            justify-content: flex-end;
+          }
+
+          .svg {
+            display: flex;
+            width: 100%;
+            max-width: 500px;
+            justify-content: flex-end;
+            gap: 2rem;
+          }
+        }
+
+        h6 {
+          color: #fff;
+          padding-top: 5px;
+          margin: 0;
+        }
+      }
+
+      .right-content {
+        flex: 1;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        align-items: center;
+        max-width: 500px;
+
+        img {
+          width: 100%;
+          height: auto;
+          max-width: 500px;
+          border-radius: 10px;
+        }
+      }
+    }
+
+    @media (max-width: 768px) {
+      .content {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .left-content,
+      .right-content {
+        max-width: 100%;
+      }
+
+      .right-content {
+        order: -1; /* Move image to the top */
+        margin-bottom: 20px; /* Add spacing between image and text */
+      }
+    }
   }
 `;
 
-const Content = styled.div`
-  max-width: 600px;
-  margin-right: 20px; /* Space between content and image */
-  text-align: left;
-
-  .title {
-    font-size: 2rem;
-    color: #FF014F;
-  }
-
-  a {
-    color: #FF014F;
-    text-decoration: none;
-    font-weight: bold;
-  }
-`;
-
-const Description = styled.p`
-  color: #fff;
-  font-size: 1.5rem;
-  text-align: justify;
-  margin: 20px 0;
-`;
-
-const Image = styled.img`
-  width: 100%;
-  max-width: 600px;
-  height: auto;
-  border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-
-  @media (max-width: 768px) {
-    margin: 0 auto; /* Center image on small screens */
-  }
-`;
-
-const ImageLeftContentRightWrapper = styled.div`
-  display: flex;
-  flex-direction: row; /* Image on the left, Content on the right */
-  align-items: center;
-  width: 100%;
-  justify-content: space-between;
-  margin-bottom: 50px;
-
-  @media (max-width: 768px) {
-    flex-direction: column; /* Stack vertically on small screens */
-    text-align: center;
-  }
-`;
-
-const ImageLeft = styled.img`
-  width: 100%;
-  max-width: 600px;
-  height: auto;
-  border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  margin-right: 20px; /* Space between image and content */
-
-  @media (max-width: 768px) {
-    margin: 0 auto 20px; /* Center image and add bottom margin on small screens */
-  }
-`;
-
-const ContentRight = styled.div`
-  max-width: 600px;
-  text-align: left;
-
-  p {
-    font-size: 2rem;
-    color: #ffff;
-  }
-
-  a {
-    color: #FF014F;
-    text-decoration: none;
-    font-weight: bold;
-  }
-`;
-
-const Descriptionleft = styled.p`
-  color: #fff;
-  font-size: 1.5rem;
-  text-align: justify;
-  margin: 20px 0;
-`;
 
 export default Project;
+
+

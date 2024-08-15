@@ -16,7 +16,7 @@ const About = () => {
           Solidity for smart contracts, blockchain development, and interacting with Ethereum via Etherscan.
         </Paragraph>
       </TextSection>
-    </Container>
+    </Container >
   );
 };
 
