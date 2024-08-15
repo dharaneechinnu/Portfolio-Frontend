@@ -1,9 +1,18 @@
 import React, { useState, useEffect } from 'react';
 import styled from 'styled-components';
 
-
 const Nav = () => {
   const [color, setColor] = useState(false);
+
+  const handleScrollToSection = (id) => {
+    const element = document.getElementById(id);
+    if (element) {
+      window.scrollTo({
+        top: element.offsetTop,
+        behavior: 'smooth',
+      });
+    }
+  };
 
   const changeColor = () => {
     if (window.scrollY >= 50) {
@@ -20,26 +29,25 @@ const Nav = () => {
 
   return (
     <Container>
-    <div className={color ? "header header-bg": "header"}>
-   
-    <ul className="nav-menu">
-        <li><a href="#home">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#project">Project</a></li>
-        <li><a href="#skill">Skill</a></li>
-        <li><a href="#contact">Contact</a></li>
-    </ul>
-  
-   </div>
-   </Container>
+      <div className={color ? "header header-bg" : "header"}>
+        <ul className="nav-menu">
+          <li><a onClick={() => handleScrollToSection('home')}>Home</a></li>
+          <li><a onClick={() => handleScrollToSection('about')}>About Me</a></li>
+          <li><a onClick={() => handleScrollToSection('skill')}>Skills</a></li>
+          <li><a onClick={() => handleScrollToSection('project')}>Projects</a></li>
+          <li><a onClick={() => handleScrollToSection('contact')}>Contact Me</a></li>
+        </ul>
+      </div>
+    </Container>
   );
 };
 
-
 const Container = styled.div`
+  html {
+    scroll-behavior: smooth; /* Smooth scrolling for the entire document */
+  }
 
-
-.header{
+  .header {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -49,90 +57,88 @@ const Container = styled.div`
     height: 40px;
     z-index: 10;
   }
-  .header-bg{
+
+  .header-bg {
     background-color: rgba(0, 0, 0, 0.85);
     transition: 0.5s;
   }
-  body{
+
+  body {
     background-color: black;
   }
+
   body::-webkit-scrollbar {
     width: 4px;
   }
-  
+
   body::-webkit-scrollbar-track {
     background-color: black;
   }
-  
+
   body::-webkit-scrollbar-thumb {
     background: black;
   }
-  
-  .nav-menu{
+
+  .nav-menu {
     display: flex;
     position: relative;
     left: 30%;
   }
-  ul{
+
+  ul {
     list-style: none;
-  
   }
-  .nav-menu li{
+
+  .nav-menu li {
     padding: 0 1rem;
   }
-  .nav-menu li a{
+
+  .nav-menu li a {
     font-size: 1.5rem;
     font-weight: 600;
     text-decoration: none;
     color: white;
+    cursor: pointer;
     transition: 0.5s;
   }
-  .nav-menu li a:hover{
-    color:#fff ;
+
+  .nav-menu li a:hover {
+    color: #fff;
     text-decoration: underline;
   }
-  h1{
+
+  h1 {
     color: white;
   }
-  
 
-
-  
-/* Styles for screens smaller than or equal to mini iPad width in landscape mode */
-@media screen and (max-width: 820px) {
-    .nav-menu li a{
+  @media screen and (max-width: 820px) {
+    .nav-menu li a {
       font-size: 5rem;
     }
   }
-  
-  
-  
-  @media screen and (max-width: 1040px)
-  
-  {
-    .nav-menu{
+
+  @media screen and (max-width: 1040px) {
+    .nav-menu {
       flex-direction: row;
       justify-content: top;
       align-items: top;
       width: 100%;
-   
-       gap: 1rem;
+      gap: 1rem;
       position: absolute;
       top: 0;
       left: 10%;
-     z-index: -3;
+      z-index: -3;
       transition: 0.3s;
     }
-   
-    .nav-menu li{
+
+    .nav-menu li {
       padding: 1rem 0;
     }
-    .nav-menu li a{
+
+    .nav-menu li a {
       font-size: 1rem;
     }
-  
   }
-
 `;
 
 export default Nav;

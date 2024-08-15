@@ -162,6 +162,7 @@ const Container = styled.div`
   padding: 1rem;
   margin-top: 10px;
   height: 100vh;
+  width: 100%;
   @media (min-width: 768px) {
     flex-direction: row;
     justify-content: space-between;

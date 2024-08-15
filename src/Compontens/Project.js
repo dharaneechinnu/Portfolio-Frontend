@@ -112,7 +112,7 @@ import hand from '../img/hand.png';
 
 
 const StyledProject = styled.div`
-  width: 100vw;
+ width: 100%;
 
   display: flex;
   justify-content: center;

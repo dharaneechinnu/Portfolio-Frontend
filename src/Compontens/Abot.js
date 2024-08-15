@@ -27,11 +27,14 @@ const Container = styled.div`
   justify-content: space-between;
   align-items: center;
   padding: 20px;
+  margin-right: 5rem;
   gap: 20px;
+  
 
   @media (max-width: 768px) {
     flex-direction: column;
     align-items: center;
+    margin-left: 5rem;
   }
 `;
 

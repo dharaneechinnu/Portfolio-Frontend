@@ -29,10 +29,10 @@ const Container = styled.div`
   justify-content: center;
   align-items: center;
   min-height: 100vh;
- 
+  width: 100%;
 `;
 
-const Content = styled.div`
+const Content = styled.div` margin-left: 2rem;
   display: flex;
   align-items: center;
   width: 100%;
@@ -41,7 +41,9 @@ const Content = styled.div`
 
   @media (max-width: 1200px) {
     flex-direction: column;
+   
     text-align: center;
+    justify-content: center;
   }
 `;
 

@@ -53,11 +53,16 @@ const Name = styled.div`
   font-size: 5rem;
   font-weight: 600;
   color: red;
+  width: 100%;
 `;
 
 const Container = styled.div`
   height: 100vh;
-
+  @media (max-width: 768px) {
+    flex-direction: column;
+    align-items: center;
+    margin-left: 5rem;
+  }
   .skill_full {
     width: 100%;
   }
@@ -96,6 +101,7 @@ const Container = styled.div`
     height: 100px;
     margin: 0 10px;
     margin-top: 10px;
+    margin-bottom: 10px;
     padding: 10px;
     border-radius: 10px;
     border: 2px solid white;
@@ -127,6 +133,7 @@ const Container = styled.div`
       width: 80px; /* Adjusted width for smaller screens */
       height: 80px; /* Adjusted height for smaller screens */
       margin: 0 5px; /* Further reduced margin for even smaller screens */
+      margin-bottom: 10px;
     }
 
     .stack svg {
